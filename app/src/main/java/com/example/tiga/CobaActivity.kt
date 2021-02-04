@@ -1,5 +1,6 @@
 package com.example.tiga
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,7 +13,8 @@ class CobaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_coba_fragmen)
 
         btnGoTo.setOnClickListener {
-
+            val intent = Intent(this, DuaActivity::class.java)
+            startActivity(intent)
         }
     }
 
